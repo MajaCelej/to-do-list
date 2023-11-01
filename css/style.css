@@ -7,6 +7,19 @@ html {
 }
 
 .body {
-    background-color: rgb(171, 147, 255);
+    background-color: rgb(233 233 233);
+    font-family: 'Raleway', sans-serif;
 }
 
+.section {
+    background-color: rgb(255, 255, 255);
+}
+
+.section-header {
+    border-bottom: 2px solid rgb(233 233 233);
+}
+
+.form-button {
+    background-color: rgb(0, 128, 128);
+    color: rgb(255, 255, 255);
+}
