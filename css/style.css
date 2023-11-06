@@ -49,3 +49,42 @@ html {
     width: 700px;
     padding: 10px;
 }
+
+.task__list {
+    list-style: none;
+}
+
+.task__ToDoList {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.task__list {
+    padding-left: 0px;
+}
+
+.task__content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.task__content--done {
+    text-decoration: line-through
+}
+
+.task__js--done {
+    background-color: rgb(1, 184, 1);
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.task__js--remove {
+    background-color: rgb(255, 0, 0);
+    width: 30px;
+    height: 30px;
+    color: white;
+}
