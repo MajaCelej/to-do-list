@@ -44,7 +44,7 @@
             htmlString += `
               <li class="task__list">
               <span class="task__ToDoList">
-              <button class="js-done task__js--done">${task.done ?  "✔" : ""} </button>
+              <button class="js-done task__js--done">${task.done ? "✔" : ""} </button>
               <span class="task__content ${task.done ? "task__content--done" : ""}">
               ${task.content}
               </span>
@@ -61,14 +61,16 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
-
-        if (newTaskContent === "") {
-            return;
+        
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim();
+        
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = "";
         }
-
-        addNewTask(newTaskContent);
+       
+        newTaskElement.focus();
     };
 
     const init = () => {
