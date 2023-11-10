@@ -1,0 +1,22 @@
+.section {
+    background-color: rgb(255, 255, 255);
+    max-width: 900px;
+}
+
+.section__header {
+    border-bottom: 2px solid rgb(233 233 233);
+    padding: 20px;
+    margin: 0px;
+}
+
+.section__main {
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+}
