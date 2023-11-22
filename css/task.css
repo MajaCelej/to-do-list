@@ -14,6 +14,14 @@
     padding-left: 0px;
 }
 
+.task__list--hidden {
+    display: none;
+}
+
+.task__markAllDone:disabled {
+    color: rgb(202, 202, 202);
+}
+
 .task__content {
     display: flex;
     align-content: center;
