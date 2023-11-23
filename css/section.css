@@ -10,10 +10,16 @@
 }
 
 .section__headerSecondary {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 992px) {
+    .section__headerSecondary {
+        grid-template-columns: 1fr;
+    }
 }
 
 .section__main {

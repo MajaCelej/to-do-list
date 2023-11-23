@@ -18,6 +18,20 @@
     display: none;
 }
 
+.task__newButtons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+    .task__hideOrShowAllDone {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 5px;
+    };
+}
+
 .task__hideOrShowAllDone {
     background: transparent;
     border: none;
@@ -27,6 +41,15 @@
 
 .task__hideOrShowAllDone:hover {
     color: rgb(0, 179, 179)
+}
+
+@media (max-width: 992px) {
+    .task__markAllDone {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 5px;
+    };
 }
 
 .task__markAllDone {
