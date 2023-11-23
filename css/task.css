@@ -58,6 +58,7 @@
 
 .task__js--done {
     background-color: rgb(1, 184, 1);
+    border: none;
     width: 30px;
     height: 30px;
     color: white;
@@ -70,6 +71,7 @@
 
 .task__js--remove {
     background-color: rgb(222, 0, 0);
+    border: none;
     width: 30px;
     height: 30px;
     color: white;
