@@ -18,6 +18,28 @@
     display: none;
 }
 
+.task__hideOrShowAllDone {
+    background: transparent;
+    border: none;
+    color: teal;
+    transition: 1s;
+}
+
+.task__hideOrShowAllDone:hover {
+    color: rgb(0, 179, 179)
+}
+
+.task__markAllDone {
+    background: transparent;
+    border: none;
+    color: teal;
+    transition: 1s;
+}
+
+.task__markAllDone:hover {
+    color: rgb(0, 179, 179)
+}
+
 .task__markAllDone:disabled {
     color: rgb(202, 202, 202);
 }
@@ -39,11 +61,21 @@
     width: 30px;
     height: 30px;
     color: white;
+    transition: 1s;
+}
+
+.task__js--done:hover {
+    background-color: rgb(1, 228, 1);
 }
 
 .task__js--remove {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(222, 0, 0);
     width: 30px;
     height: 30px;
     color: white;
+    transition: 1s;
+}
+
+.task__js--remove:hover {
+    background-color: rgb(255, 22, 22)
 }
